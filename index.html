@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>موقع عقارات</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">عقاراتي</div>
+            <ul>
+                <li><a href="#">الرئيسية</a></li>
+                <li><a href="#">شقق للإيجار</a></li>
+                <li><a href="#">شقق للبيع</a></li>
+             
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h1>ابحث عن منزلك المثالي</h1>
+            <div class="search-bar">
+                <input type="text" id="location" placeholder="الموقع">
+                <select id="type">
+                    <option value="">نوع العقار</option>
+                    <option value="شقة">شقة</option>
+                    <option value="فيلا">فيلا</option>
+                    <option value="أرض">أرض</option>
+                </select>
+                <select id="purpose">
+                    <option value="">الغرض</option>
+                    <option value="إيجار">إيجار</option>
+                    <option value="بيع">بيع</option>
+                </select>
+                <button onclick="searchProperties()">بحث</button>
+            </div>
+        </section>
+
+        <section class="properties">
+            <h2>عقارات مميزة</h2>
+            <div id="property-list" class="property-grid">
+                <div class="property-card">
+                    <img src="https://via.placeholder.com/300x200" alt="صورة عقار">
+                    <h3>شقة فاخرة للإيجار</h3>
+                    <p>الموقع: الرياض</p>
+                    <p>السعر: 5000 ريال/شهر</p>
+                    <button>تفاصيل</button>
+                </div>
+                <div class="property-card">
+                    <img src="https://via.placeholder.com/300x200" alt="صورة عقار">
+                    <h3>فيلا للبيع</h3>
+                    <p>الموقع: جدة</p>
+                    <p>السعر: 1,500,000 ريال</p>
+                    <button>تفاصيل</button>
+                </div>
+            </div>
+        </section>
+    </main>
+  
+
+    <gmp-map
+    center="37.4220656,-122.0840897"
+    zoom="10"
+    map-id="DEMO_MAP_ID"
+    style="height: 400px"
+  ></gmp-map>
+
+  
+
+    <footer>
+           <p>إتصل بنا:20088265</p> 
+        <p>&copy; 2025 موقع عقارات. جميع الحقوق محفوظة.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
