@@ -7,6 +7,24 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+     
+ import React, { Component } from 'react'
+ 
+ import {Link} from "react-router-dom";
+ 
+ export default class App extends Component {
+      render() {
+        return (
+          <div>
+            <nav>
+              <Link to='index.html'> Home </Link>
+              <Link to='/settings'> Settings </Link>
+            </nav>
+          </div>
+        )
+      }
+    }
+    
     <header>
         <nav>
             <div class="logo">عقاراتي</div>
